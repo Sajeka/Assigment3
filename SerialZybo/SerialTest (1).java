@@ -23,7 +23,7 @@ public class SerialTest implements SerialPortEventListener {
 	private static final String PORT_NAMES[] = {
 		"/dev/tty.usbserial-A9007UX1", // Mac
 		"/dev/ttyUSB1", // Linux
-		"COM11", // Windows
+		"COM6", // Windows
 	};
 	private BufferedReader input;
 	private OutputStream output;
@@ -90,7 +90,7 @@ public class SerialTest implements SerialPortEventListener {
 						System.out.println("Starting sensor sampling");
 						//File fin = new File("/tmp/log.csv"); // a linux example
 						
-						File fin = new File("This PC\\Documents\\CSV_log.csv");
+						File fin = new File("Documents\\CSV_log.csv");
 						try {
 							ArrayList<String> outputList = readFile(fin);
 
