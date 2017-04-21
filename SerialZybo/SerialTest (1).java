@@ -89,7 +89,8 @@ public class SerialTest implements SerialPortEventListener {
 					if (inputLine.equals("loserville")) {
 						System.out.println("Starting sensor sampling");
 						//File fin = new File("/tmp/log.csv"); // a linux example
-						File fin = new File("C:\\Users\\Damandeepkaur\\workspace\\Preprocessing\\log.csv");
+						
+						File fin = new File("This PC\\Documents\\CSV_log.csv");
 						try {
 							ArrayList<String> outputList = readFile(fin);
 
